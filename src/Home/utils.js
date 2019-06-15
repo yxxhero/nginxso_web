@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from 'antd';
 
+// eslint-disable-next-line
 export const isImg = /^http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w-.\/?%&=]*)?/;
 export const getChildrenToRender = (item, i) => {
   const tag = item.name.indexOf('title') === 0 ? 'h1' : 'div';

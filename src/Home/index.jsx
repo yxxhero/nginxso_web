@@ -5,13 +5,11 @@ import { enquireScreen } from 'enquire-js';
 
 import Banner3 from './Banner3';
 import Teams0 from './Teams0';
-import Content12 from './Content12';
 import Footer2 from './Footer2';
 
 import {
   Banner30DataSource,
   Teams00DataSource,
-  Content120DataSource,
   Footer20DataSource,
 } from './data.source';
 import './less/antMotionStyle.less';
@@ -62,12 +60,6 @@ export default class Home extends React.Component {
         id="Teams0_0"
         key="Teams0_0"
         dataSource={Teams00DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Content12
-        id="Content12_0"
-        key="Content12_0"
-        dataSource={Content120DataSource}
         isMobile={this.state.isMobile}
       />,
       <Footer2

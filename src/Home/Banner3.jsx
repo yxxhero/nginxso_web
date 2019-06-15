@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from 'antd';
 import QueueAnim from 'rc-queue-anim';
 import Texty from 'rc-texty';
+import { SearchIndex } from './component/Search';
 import 'rc-texty/assets/index.css';
 
 class Banner extends React.PureComponent {
@@ -19,6 +20,14 @@ class Banner extends React.PureComponent {
           </Button>
         );
       }
+      if (name.match('search')) {
+        return (
+          <div key={name} {...$item}>
+              <SearchIndex />
+          </div>
+        );
+      }
+
 
       return (
         <div key={name} {...$item}>

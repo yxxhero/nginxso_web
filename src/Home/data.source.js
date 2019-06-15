@@ -1,31 +1,20 @@
-import React from 'react';
 export const Banner30DataSource = {
   wrapper: { className: 'banner3' },
   textWrapper: {
     className: 'banner3-text-wrapper',
     children: [
       {
-        name: 'nameEn',
-        className: 'banner3-name-en',
-        children: 'Seeking Experience & Engineering Conference',
-      },
-      {
         name: 'slogan',
         className: 'banner3-slogan',
-        children: '首届蚂蚁金服体验科技大会',
+        children: '指令索引高效配置',
         texty: true,
       },
       {
         name: 'name',
         className: 'banner3-name',
-        children: '探索极致用户体验与最佳工程实践探索',
+        children: '探索nginx配置查询与高效配置',
       },
-      { name: 'button', className: 'banner3-button', children: '立即报名' },
-      {
-        name: 'time',
-        className: 'banner3-time',
-        children: '2018.01.06 / 中国·杭州',
-      },
+      { name: 'search'},
     ],
   },
 };
@@ -44,149 +33,22 @@ export const Teams00DataSource = {
             {
               name: 'image',
               children:
-                'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*njqxS5Ky7CQAAAAAAAAAAABjARQnAQ',
+                'https://www.aiopsclub.com/uploads/admin/ca72bb8e1f4ccf1cdafc99b7e4155f31.jpg',
               className: 'teams0-image',
             },
             {
               name: 'content',
               children:
-                'SEE = Seeking Experience & Engineering，意为探索用户体验与工程实践，由蚂蚁金服集团每年举办 1-2 次，包括专业分享、产品展台、Workshop 等内容。',
+              '热爱运维开发，关注数据库、web服务、机器学习、容器管理等技术方向',
               className: 'teams0-content',
             },
-            { name: 'title', children: '韩勇', className: 'teams0-h1' },
+            { name: 'title', children: '苑雄雄', className: 'teams0-h1' },
             {
               name: 'content2',
-              children: '公司+职位 信息暂缺',
+              children: '北京聚道科技 运维工程师/运维开发工程师',
               className: 'teams0-content',
             },
           ],
-        },
-      },
-      {
-        name: 'elem1',
-        className: 'teams0-banner-user-elem',
-        titleWrapper: {
-          className: 'teams0-content-wrapper',
-          children: [
-            {
-              name: 'image',
-              children:
-                'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ',
-              className: 'teams0-image',
-            },
-            {
-              name: 'content',
-              children:
-                'SEE = Seeking Experience & Engineering，意为探索用户体验与工程实践，由蚂蚁金服集团每年举办 1-2 次，包括专业分享、产品展台、Workshop 等内容。',
-              className: 'teams0-content',
-            },
-            { name: 'title', children: '叶秀英', className: 'teams0-h1' },
-            {
-              name: 'content2',
-              children: '公司+职位 信息暂缺',
-              className: 'teams0-content',
-            },
-          ],
-        },
-      },
-    ],
-  },
-};
-export const Content120DataSource = {
-  wrapper: { className: 'home-page-wrapper content12-wrapper' },
-  page: { className: 'home-page content12' },
-  OverPack: { playScale: 0.3, className: '' },
-  titleWrapper: {
-    className: 'title-wrapper',
-    children: [
-      {
-        name: 'image',
-        children:
-          'https://gw.alipayobjects.com/zos/rmsportal/PiqyziYmvbgAudYfhuBr.svg',
-        className: 'title-image',
-      },
-      { name: 'title', children: '特别鸣谢', className: 'title-h1' },
-    ],
-  },
-  block: {
-    className: 'img-wrapper',
-    children: [
-      {
-        name: 'block0',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: 'block-content' },
-          img: {
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/TFicUVisNHTOEeMYXuQF.svg',
-          },
-        },
-      },
-      {
-        name: 'block1',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: 'block-content' },
-          img: {
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/hkLGkrlCEkGZeMQlnEkD.svg',
-          },
-        },
-      },
-      {
-        name: 'block2',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: 'block-content' },
-          img: {
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/bqyPRSZmhvrsfJrBvASi.svg',
-          },
-        },
-      },
-      {
-        name: 'block3',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: 'block-content' },
-          img: {
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/UcsyszzOabdCYDkoPPnM.svg',
-          },
-        },
-      },
-      {
-        name: 'block4',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: 'block-content' },
-          img: {
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/kRBeaICGexAmVjqBEqgw.svg',
-          },
-        },
-      },
-      {
-        name: 'block5',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: 'block-content' },
-          img: {
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/ftBIiyJcCHpHEioRvPsV.svg',
-          },
         },
       },
     ],
@@ -199,25 +61,8 @@ export const Footer20DataSource = {
     className: 'copyright',
     children: [
       {
-        name: 'image',
-        children:
-          'https://gw.alipayobjects.com/zos/rmsportal/NuuAwJBxewWglRSoNjET.png',
-        className: 'copyright-logo',
-      },
-      {
-        name: 'group',
-        children: '蚂蚁金服体验科技大会',
-        className: 'copyright-group',
-      },
-      {
-        name: 'image2',
-        children:
-          'https://gw.alipayobjects.com/zos/rmsportal/fgGmQUfiUfSBfvsQpfOj.svg',
-        className: 'copyright-line',
-      },
-      {
         name: 'copyright',
-        children: 'Copyright © 蚂蚁金融服务集团',
+        children: 'Copyright © github.com/yxxhero',
         className: 'copyright-text',
       },
     ],
