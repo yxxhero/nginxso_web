@@ -7,15 +7,24 @@ const Search = Input.Search;
 export class SearchIndex extends React.Component {
   state = {
     dataSource: [],
+    open: false
   };
 
   handleSelect = value => { 
     console.log(value);
+    this.setState({open:false});
   };
-  handleSearch = value => {
+
+  handleSearchResource = value => {
     this.setState({
       dataSource: !value ? [] : [value, value + value, value + value + value],
+      open: true
     });
+  };
+
+  handleSearch = value => {
+    console.log(value);
+    this.setState({open:false});
   };
 
   handleKeyPress = ev => {
@@ -28,9 +37,10 @@ export class SearchIndex extends React.Component {
       <div className="global-search-wrapper">
         <AutoComplete
           dataSource={dataSource}
-          onSelect={this.handleSelect}
           size="large"
-          onSearch={this.handleSearch}
+          open={this.state.open}
+          onSelect={this.handleSelect}
+          onSearch={this.handleSearchResource}
           style={{width: '100%'}}
         >
         <Search
