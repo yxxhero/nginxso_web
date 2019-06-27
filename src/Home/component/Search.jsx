@@ -1,14 +1,24 @@
 import React from 'react';
+import { connect  } from 'react-redux';
 import './search.css';
 import { AutoComplete, Input } from 'antd';
+import { cleanautocompletelist, getautocompletelist } from '@/redux/autocomplete.redux';
 
 const Search = Input.Search;
 
-export class SearchIndex extends React.Component {
+@connect(
+  state => state.autocompletes,
+  {getautocompletelist, cleanautocompletelist}
+)
+class SearchIndex extends React.Component {
+  
   state = {
-    dataSource: [],
     open: false
   };
+
+  componentDidMount () {
+  	console.log(this.props)	
+  } 
 
   handleSelect = value => { 
     console.log(value);
@@ -16,8 +26,12 @@ export class SearchIndex extends React.Component {
   };
 
   handleSearchResource = value => {
+    this.props.cleanautocompletelist();
+    if (value.length){
+        this.props.getautocompletelist({keyword: value});
+    }
+
     this.setState({
-      dataSource: !value ? [] : [value, value + value, value + value + value],
       open: true
     });
   };
@@ -32,11 +46,10 @@ export class SearchIndex extends React.Component {
   };
 
   render() {
-    const { dataSource } = this.state;
     return (
       <div className="global-search-wrapper">
         <AutoComplete
-          dataSource={dataSource}
+          dataSource={this.props.autocompletelist}
           size="large"
           open={this.state.open}
           onSelect={this.handleSelect}
@@ -54,3 +67,5 @@ export class SearchIndex extends React.Component {
     );
   }
 }
+export default SearchIndex;
+

@@ -12,7 +12,7 @@ export const Banner30DataSource = {
       {
         name: 'name',
         className: 'banner3-name',
-        children: '探索nginx配置查询与高效配置',
+        children: '探索nginx配置查询(支持变量以及指令搜索)',
       },
       { name: 'search'},
     ],
